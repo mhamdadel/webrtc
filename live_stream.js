@@ -25,6 +25,7 @@ function gotStream(stream) {
     console.log("Received local stream");
     localVideo.srcObject = stream;
     localStream = stream;
+    localStream.muted = true;
     callButton.disabled = false;
 }
 
